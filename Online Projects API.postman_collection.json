@@ -1,0 +1,673 @@
+{
+	"info": {
+		"_postman_id": "0694adec-ce5f-4cfb-9881-58c8a03ba4ac",
+		"name": "Online Projects API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get User by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\r\n  user(\r\n    id: \"6195bc1e78a11d3df22ab333\"\r\n  ){\r\n    id\r\n    mail\r\n    identification\r\n    name\r\n    password\r\n    type\r\n    status\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Project by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\r\n  project(\r\n    id : \"6195beb078a11d3df22ab90f\"\r\n  ){\r\n  \tid\r\n    name\r\n    generalobj\r\n    specificobj\r\n    budget\r\n    startdate\r\n    enddate\r\n    leaderid\r\n    status\r\n    stage\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Registration by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\r\n  project(\r\n    id : \"6195beb078a11d3df22ab90f\"\r\n  ){\r\n  \tid\r\n    name\r\n    generalobj\r\n    specificobj\r\n    budget\r\n    startdate\r\n    enddate\r\n    leaderid\r\n    status\r\n    stage\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Progress by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\r\n  project(\r\n    id : \"6195beb078a11d3df22ab90f\"\r\n  ){\r\n  \tid\r\n    name\r\n    generalobj\r\n    specificobj\r\n    budget\r\n    startdate\r\n    enddate\r\n    leaderid\r\n    status\r\n    stage\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\r\n  users{\r\n    id\r\n    mail\r\n    identification\r\n    name\r\n    password\r\n    type\r\n    status\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Projects",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\r\n  projects{\r\n  \tid\r\n    name\r\n    generalobj\r\n    specificobj\r\n    budget\r\n    startdate\r\n    enddate\r\n    leaderid\r\n    status\r\n    stage\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Registrations",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\r\n  registrations{\r\n  \tid\r\n    projectid\r\n    studentid\r\n    status\r\n    startdate\r\n    enddate\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Progress",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\r\n  registrations{\r\n  \tid\r\n    projectid\r\n    studentid\r\n    status\r\n    startdate\r\n    enddate\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation{\r\n  addUser(\r\n    mail:\"luisgranada@gmail.com\",\r\n    identification:\"123456789\",\r\n    name:\"Luis Granada\",\r\n    password:\"88888888\",\r\n    type:\"Administrador\",\r\n    status:\"Autorizado\"\r\n  ){\r\n    id,\r\n    mail,\r\n    identification,\r\n    name,\r\n    password,\r\n    type,\r\n    status\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation{\r\n  updateUser(\r\n    id: \"61a5832fdaa07b4628aca55f\"\r\n    mail:\"luisgranada@gmail.com\",\r\n    identification:\"123456789\",\r\n    name:\"Luis Granada\",\r\n    password:\"88888888\",\r\n    type:\"Estudiante\",\r\n    status:\"Pendiente\"\r\n  ){\r\n    id,\r\n    mail,\r\n    identification,\r\n    name,\r\n    password,\r\n    type,\r\n    status\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation{\r\n  deleteUser(\r\n    id: \"61a5832fdaa07b4628aca55f\"\r\n  ){\r\n    id,\r\n    mail,\r\n    identification,\r\n    name,\r\n    password,\r\n    type,\r\n    status\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation{\r\n  addProject(\r\n    name:\"Proyecto Angular\",\r\n    generalobj:\"Crear Proyecto MERN\",\r\n    specificobj:\"Usar metodología Scrum\",\r\n    budget:580000,\r\n    startdate:\"29/11/2021\",\r\n    enddate:\"31/12/2021\",\r\n    leaderid:\"6195bc1e78a11d3df22ab90e\",\r\n    status:\"Activo\",\r\n    stage:\"Iniciado\"\r\n  ){\r\n    id,\r\n    name,\r\n    generalobj,\r\n    specificobj,\r\n    budget,\r\n    startdate,\r\n    enddate,\r\n    leaderid,\r\n    status,\r\n    stage\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation{\r\n  updateProject(\r\n    id:\"61a5882df4775ebfd0fffdf0\",\r\n    name:\"Proyecto Angular\",\r\n    generalobj:\"Crear Proyecto MERN\",\r\n    specificobj:\"Usar metodología Scrum\",\r\n    budget:580000,\r\n    startdate:\"29/11/2021\",\r\n    enddate:\"31/12/2021\",\r\n    leaderid:\"6195bc1e78a11d3df22ab90e\",\r\n    status:\"Inactivo\",\r\n    stage:\"Finalizado\"\r\n  ){\r\n    id,\r\n    name,\r\n    generalobj,\r\n    specificobj,\r\n    budget,\r\n    startdate,\r\n    enddate,\r\n    leaderid,\r\n    status,\r\n    stage\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation{\r\n  deleteProject(\r\n    id:\"61a58887f4775ebfd0fffdf2\"\r\n  ){\r\n    id,\r\n    name,\r\n    generalobj,\r\n    specificobj,\r\n    budget,\r\n    startdate,\r\n    enddate,\r\n    leaderid,\r\n    status,\r\n    stage\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation{\r\n  addRegistration(\r\n    projectid:\"6195beb078a11d3df22ab90f\",\r\n    studentid:\"61a16aec79440ba0dc574590\",\r\n    status:\"Aceptada\",\r\n    startdate:\"29/11/2021\",\r\n    enddate:\"31/12/2021\"\r\n  ){\r\n    id,\r\n    projectid,\r\n    studentid,\r\n    status,\r\n    startdate,\r\n    enddate\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation{\r\n  updateRegistration(\r\n    id:\"61a58cc4d51123a4d9299fdf\"\r\n    projectid:\"6195beb078a11d3df22ab90f\",\r\n    studentid:\"61a16aec79440ba0dc574590\",\r\n    status:\"Rechazada\",\r\n    startdate:\"29/11/2021\",\r\n    enddate:\"31/12/2021\"\r\n  ){\r\n    id,\r\n    projectid,\r\n    studentid,\r\n    status,\r\n    startdate,\r\n    enddate\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation{\r\n  deleteRegistration(\r\n    id:\"61a58d03d51123a4d9299fe1\"\r\n  ){\r\n    id,\r\n    projectid,\r\n    studentid,\r\n    status,\r\n    startdate,\r\n    enddate\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Progress",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation{\r\n  addProgress(\r\n    projectid:\"6195beb078a11d3df22ab90f\",\r\n    date:\"29/11/2021\",\r\n    description:\"Completo Fase2\",\r\n    observations:\"Fase incompleta\"\r\n  ){\r\n    id,\r\n    projectid,\r\n    date,\r\n    description,\r\n    observations\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Progress",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation{\r\n  updateProgress(\r\n    id:\"61a590605510d392f9edc330\"\r\n    projectid:\"6195beb078a11d3df22ab90f\",\r\n    date:\"29/11/2021\",\r\n    description:\"Completo Fase2\",\r\n    observations:\"Fase terminada\"\r\n  ){\r\n    id,\r\n    projectid,\r\n    date,\r\n    description,\r\n    observations\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Progress",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation{\r\n  deleteProgress(\r\n    id:\"61a590935510d392f9edc332\"\r\n  ){\r\n    id,\r\n    projectid,\r\n    date,\r\n    description,\r\n    observations\r\n  }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/researchProject?Content-Type=Content-Type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"researchProject"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "Content-Type"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
