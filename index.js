@@ -1,6 +1,7 @@
 // Definition packages
 const express = require("express");
 const { graphqlHTTP } = require("express-graphql");
+const cors = require("cors");
 const schema = require("./DAO/schema");
 const { dbConnection } = require("./database/config");
 
@@ -17,6 +18,9 @@ app.get("/", (req, res) =>{
         msg:"Answer OK"
     })
 });
+
+// Give grant connection to frontend
+app.use(cors());
 
 // Graphql EndPoint
 app.use("/researchProject", graphqlHTTP({
