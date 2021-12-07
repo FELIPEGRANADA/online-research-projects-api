@@ -140,6 +140,17 @@ const RootQuery = new GraphQLObjectType({
             resolve(){
                 return Progress.find();
             }
+        },
+        progressbyproject : {
+            type: new GraphQLList(ProgressType),
+            args : {
+                projectid : {
+                    type: GraphQLID
+                }
+            },
+            resolve(parent, args){
+                return Progress.find({projectid : args.projectid});
+            }
         }
     }   
 });
